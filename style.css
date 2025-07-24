@@ -1,0 +1,124 @@
+main{ 
+    box-sizing: border-box;
+}
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+nav ul li{
+    list-style: none;
+
+}
+nav li a{
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    
+}
+.home{
+    font-weight: bold;
+    color: #252432 ;
+}
+.cart{
+    color: black;
+}
+/* banner style */
+.banner-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.banner{
+    display: flex;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.37rem;
+}
+
+
+/* shared style */
+.dark-2{
+    color: #8987A1;
+}
+.dark-3{
+    color:rgba(0, 0, 0, 0.5);
+}
+.tomato{
+    color: #E95A08;
+}
+.btn-primary{
+    width: 100%;
+    color: white;
+    background-color: #E95A08;
+    padding: 10px;
+    border: none;
+    
+    
+}
+/* main style */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Our plans style */
+.our-plans{
+    text-align: center;
+    margin-bottom: 210px;
+}
+.plan-description{
+    font-size: 1.37rem;
+}
+.plan-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+.cards{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+}
+.card{
+    text-align: center;
+    padding: 10px;
+}
+.card img{
+    max-width: 100%;
+
+}
+/* flower lovers style */
+
+
+@media screen and (max-width:576px) {
+    
+    .home,.shop,.about-us{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    nav{
+        margin: auto;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner-title{
+        text-align: center;
+    }
+    .banner-description{
+        text-align: center;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
