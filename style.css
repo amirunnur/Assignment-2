@@ -73,7 +73,7 @@ main{
 /* Our plans style */
 .our-plans{
     text-align: center;
-    margin-bottom: 210px;
+    margin-bottom: 200px;
 }
 .plan-description{
     font-size: 1.37rem;
@@ -92,10 +92,99 @@ main{
 }
 .card img{
     max-width: 100%;
-
 }
 /* flower lovers style */
+.flower-lovers{
+    display: flex;
+    margin-bottom: 130px;
+}
+.flower-lovers img{
+    max-width: 100%;
+}
+.flower-info{
+    margin-left: 60px;
+}
+.flower-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+.flower-list{
+    font-size: 1.37rem;
+}
+/* latest deal style */
+.latest-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    text-align: center;
+}
+.latest-description{
+    font-size: 1.37rem;
+    text-align: center;
+}
+/* plant discont style */
+.container{
+    display: flex;
+    gap: 30px;
+}
+.left-colum{
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+   gap: 20px;
+}
+ .right-colum{
+     flex: 2; 
+    }
 
+ 
+.flower-content{
+    position: relative;
+    
+}
+.flower{
+    border-radius: 10px;
+     /* object-fit: cover; */
+    /* display: block;  */
+    filter: brightness(60%);
+    
+    height: auto;
+}
+
+.discount{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    
+}
+
+.discount-zabo{
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+
+}
+.shop-now{
+    position: absolute;
+    bottom: 100px;
+    left: 140px;
+    color: white;
+    font-weight: bold;
+}
+.shop-now-zabo{
+    position: absolute;
+    bottom: 180px;
+    left: 300px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
 
 @media screen and (max-width:576px) {
     
@@ -120,5 +209,51 @@ main{
     .cards{
         grid-template-columns: repeat(2,1fr);
     }
-    
+    .flower-lovers{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .flower{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .discount{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+ .discount-zabo{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.shop-now{
+    position: absolute;
+    bottom: 130px;
+    left: 180px;
+    color: white;
+    font-weight: bold;
+}
+.shop-now-zabo{
+    position: absolute;
+    bottom: 100px;
+    left: 160px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
 }
