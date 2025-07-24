@@ -209,6 +209,9 @@ main{
     .cards{
         grid-template-columns: repeat(2,1fr);
     }
+    .flower-info{
+        margin: 20px;
+    }
     .flower-lovers{
         flex-direction: column;
         align-items: center;
