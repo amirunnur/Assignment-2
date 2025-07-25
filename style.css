@@ -97,9 +97,17 @@ main{
 .flower-lovers{
     display: flex;
     margin-bottom: 130px;
+    position: relative;
 }
-.flower-lovers img{
+
+.flower-img{
     max-width: 100%;
+}
+.badge{
+    position: absolute;
+    width: 300px;
+    top: -140px;
+    right: 500px;
 }
 .flower-info{
     margin-left: 60px;
@@ -185,6 +193,73 @@ main{
     font-weight: bold;
     font-size: 1.7rem;
 }
+/* footer style */
+footer{
+    margin-top: 130px;
+    background-image: url('assets/news-letter-bg.png');
+    height: auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px ;
+    text-align: center;
+    
+}
+.subscribe{
+    max-width: 700px;
+    margin: 0 auto;
+   
+}
+.subscribe h2{
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: white;
+}
+
+.email{
+    padding: 12px 15px;
+    width: 60%;
+}
+.btn{
+    padding: 12px 15px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
+.bottom{
+    max-width: 1005;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.bottom-description{
+    font-size: 1.2rem;
+}
+.nav-1 ul li{
+    list-style: none;
+    margin: 10px;
+    
+}
+.nav-1 li a{
+    text-decoration: none;
+    
+}
+.nav-2 ul li{
+    list-style: none;
+    margin: 10px;
+}
+.nav-2 li a{
+    text-decoration: none;
+}
+.nav-1,.nav-2{
+    font-size: 1.2rem;
+   
+}
+.bottom-img{
+    margin: 20px;
+}
 
 @media screen and (max-width:576px) {
     
@@ -216,6 +291,9 @@ main{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .badge{
+        display: none;
     }
     .container{
         flex-direction: column;
@@ -258,5 +336,8 @@ main{
     color: white;
     font-weight: bold;
     font-size: 1.7rem;
+}
+.bottom{
+    grid-template-columns: repeat(1,1fr);
 }
 }
