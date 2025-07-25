@@ -6,7 +6,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px 200px;
 }
 nav ul li{
     list-style: none;
